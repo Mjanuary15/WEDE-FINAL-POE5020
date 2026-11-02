@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Send a service enquiry to 297 Lifestyle & Car Care."><title>Enquiry | 297 Lifestyle & Car Care</title><link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script></head>
+<body><a class="skip-link" href="#main">Skip to main content</a><header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="assets/297-lifestyle-logo.png" alt="297 Lifestyle & Car Care logo" class="brand-logo"><span><strong>297</strong><small>LIFESTYLE &amp; CAR CARE</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation menu">☰</button><nav id="main-nav" class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a class="active" href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav></div></header>
+<main id="main"><section class="page-hero"><div class="container"><p class="eyebrow">SERVICE ENQUIRY</p><h1>Tell us what you need</h1><p>Complete the form below and your enquiry will be sent securely through Formspree.</p></div></section>
+<section class="section"><div class="container form-layout"><div><p class="eyebrow">BEFORE YOU START</p><h2>Share a few details.</h2><p>Give enough information for the team to understand your question. Avoid including passwords or other sensitive information.</p><div class="feature-panel"><h3>What happens next?</h3><p>After you submit the form, Formspree will process your enquiry. The business should monitor the Formspree account inbox and confirm receipt settings before the website is published.</p></div></div>
+<div class="form-notice" data-fs-success role="status" aria-live="polite"></div>
+<div class="form-notice" data-fs-error role="alert" aria-live="assertive"></div>
+<form class="contact-form" id="enquiry-form" action="https://formspree.io/f/mjyypkeb" method="POST">
+<input type="hidden" name="_subject" value="New website enquiry — 297 Lifestyle & Car Care">
+<!-- Honeypot spam protection: real visitors should leave this field empty. -->
+<div class="field" hidden aria-hidden="true">
+  <label for="website">Leave this field empty</label>
+  <input id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+</div>
+<div class="form-row">
+  <div class="field">
+    <label for="name">Full name <span aria-hidden="true">*</span></label>
+    <input id="name" name="name" autocomplete="name" required minlength="2" data-fs-field>
+    <small class="error" data-fs-error="name"></small>
+  </div>
+  <div class="field">
+    <label for="phone">Phone number</label>
+    <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+()\\s-]{7,20}" data-fs-field>
+    <small class="error" data-fs-error="phone"></small>
+  </div>
+</div>
+<div class="field">
+  <label for="email">Email address <span aria-hidden="true">*</span></label>
+  <input id="email" name="email" type="email" autocomplete="email" required data-fs-field>
+  <small class="error" data-fs-error="email"></small>
+</div>
+<div class="field">
+  <label for="service">What are you enquiring about? <span aria-hidden="true">*</span></label>
+  <select id="service" name="service" required data-fs-field>
+    <option value="">Choose a category</option>
+    <option>Exterior care</option><option>Interior care</option>
+    <option>Vehicle-care package</option><option>Custom request</option>
+    <option>General question</option>
+  </select>
+  <small class="error" data-fs-error="service"></small>
+</div>
+<div class="field">
+  <label for="message">Message <span aria-hidden="true">*</span></label>
+  <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000" placeholder="Tell us what you would like to know..." data-fs-field></textarea>
+  <div class="field-meta"><small class="error" data-fs-error="message"></small><small><span id="char-count">0</span>/1000</small></div>
+</div>
+<button class="button button-primary" type="submit" data-fs-submit-btn>Send enquiry</button>
+<p class="small-note">Your details will be submitted to Formspree so the business can respond. Do not include passwords or other sensitive information.</p>
+</form>
+<script>
+  window.formspree = window.formspree || function () {
+    (formspree.q = formspree.q || []).push(arguments);
+  };
+  formspree('initForm', { formElement: '#enquiry-form', formId: 'mjyypkeb' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script></div></section></main>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><img src="assets/297-lifestyle-logo.png" alt="" class="brand-logo"><span><strong>297</strong><small>LIFESTYLE &amp; CAR CARE</small></span></a><p>Car care and lifestyle in Bloemfontein.</p></div><div><h3>Explore</h3><a href="services.html">Services</a><a href="gallery.html">Gallery</a></div><div><h3>Contact</h3><a href="contact.html">Contact details</a><a href="enquiry.html">Send an enquiry</a></div></div><div class="container footer-bottom"><span>© <span id="year">2026</span> 297 Lifestyle &amp; Car Care</span><span>Student project by Molefi January</span></div></footer></body></html>
